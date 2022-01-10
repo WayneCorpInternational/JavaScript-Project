@@ -1,0 +1,51 @@
+*{
+margin: 0;
+padding: 0; 
+box-sizing: border-box; /*style of box ? */
+
+}
+
+body{
+    background-image: linear-gradient(120deg, #d4b755, #da8b75);
+color: white; /*color of top text*/
+font-family: "Poppins", sans-serif;/* fonts*/
+min-height: 100vh;
+}
+
+header {
+    font-size: 1.5rem;
+
+}
+
+/*possitioning of main text, where i write, button*/
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*here is where I type*/
+form input, form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+/*transition from one style of button to another*/
+form button{
+    color: #da8b75;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+/*when you place you mouse poiter, the button will change style*/
+form button:hover{
+    background: #da8b75;
+    color: white;
+    
+}
