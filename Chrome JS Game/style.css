@@ -6,7 +6,7 @@
 
 /* Screen border*/
 .game{
-    width: 500px;
+    width: 500px; 
     height: 200px;
     border: 1px solid black;
     margin: auto;

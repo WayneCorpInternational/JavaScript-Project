@@ -10,10 +10,13 @@ function jump(){
 
     if(character.classList == "animate"){return}
     character.classList.add("animate");
+    
     setTimeout(function(){
         character.classList.remove("animate");
     },300);
 }
+
+
 
 
 
@@ -24,13 +27,19 @@ var checkDead = setInterval(function() {
     
     if(blockLeft<20 && blockLeft>-20 && characterTop>=130){
         block.style.animation = "none";
+
+        //alert that says you lose
         alert("Game Over. score: "+Math.floor(counter/100));
         counter=0;
         block.style.animation = "block 1s infinite linear";
     
-    }else{
+    }
+    
+    else{
         counter++;
         document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
     }
 
     }, 10);
+
+  
