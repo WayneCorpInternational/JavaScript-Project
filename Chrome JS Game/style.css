@@ -6,19 +6,21 @@
 
 /* Screen border*/
 .game{
-    width: 500px; 
-    height: 200px;
+    width: 800px; 
+    height: 300px;
     border: 1px solid black;
     margin: auto;
 }
 
 /* Mario*/
 #character{
-    width: 20px;
-    height: 50px;
-    background-color: red;
+    width: 60px;
+    height: 80px;
+    
     position:relative;
-    top: 150px;
+    top: 180px;
+
+    
 }
 
 /*jump action*/
@@ -45,9 +47,9 @@
     animation: block 1s infinite linear;
 }
 
-/*animation of the object */
+/*animation of the object Enemy */
 @keyframes block{
-    0%{left: 500px}
+    0%{left: 800px}
     100%{left: -20px}
 }
 

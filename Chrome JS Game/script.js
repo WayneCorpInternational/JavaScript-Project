@@ -6,6 +6,23 @@ var counter=0;
 
 //functions
 
+class Backgroud {
+    constructor(gameWidth,gameHeight){
+            this.gameWidth = gameWidth;
+            this.gameHeight = gameHeight;
+            this.image = document.getElementById(backgroudimagens);
+            this.x = 0;
+            this.y = 0;
+            this.width = 800;
+            this.height = 300;
+         }
+
+         draw(context){
+            context.drawImage(this.image, this.x, this.y);
+}
+}
+
+
 function jump(){
 
     if(character.classList == "animate"){return}
@@ -13,12 +30,12 @@ function jump(){
     
     setTimeout(function(){
         character.classList.remove("animate");
-    },300);
+    },500);
 }
 
 
 
-
+const background = new Background(canvas.width, canvas.height);
 
 var checkDead = setInterval(function() {
 
